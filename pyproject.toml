@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tradedangerous"
+version = "10.13.10"
+description = "Trade-Dangerous is a set of powerful trading tools for Elite Dangerous, organized around one of the most powerful trade run optimizers available."
+authors = ["eyeonus <eyeonus@gmail.com>"]
+license = "MPL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7.2,<4.0"
+appjar = "^0.94.0"
+pycparser = "^2.21"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+prospector = {version = "~1.7", extras = ["with-bandit"]}
+pylint = "~2.14"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
